@@ -35,3 +35,79 @@
 //7
 //Введите команду ('+', '-', '=' или 'x'): x
 //До свидания!
+
+
+
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+
+class Counter 
+{
+private:
+    int counter;
+    
+public:
+    
+    Counter():counter(0) {}
+    
+    void incr(){
+        counter++;
+    }
+    
+    void dec(){
+        counter--;
+    }
+    
+    int get(){
+        return counter;
+    }
+    
+    void setV(int value){
+        counter= value;
+    }
+    
+};
+
+
+
+int main (){
+    int value;
+    string answer;
+    Counter count;
+      
+    cout<< "Вы хотите указать начальное значение счётчика? Введите да или нет: "<< endl;
+    cin >> answer;
+    
+    if(answer == "да"){
+        cout << "Введите начальное значение счётчика: ";
+        cin >> value;
+        
+        count.setV(value);
+                
+    }
+    
+    string command;
+    while (true) {
+        cout << "Введите команду ('+', '-', '=' или 'x'): ";
+        cin >> command;
+    
+    if (command == "+") {
+                count.incr();
+            } else if (command == "-") {
+                count.dec();
+            } else if (command == "=") {
+                cout << "Текущее значение счётчика: " << count.get() << endl;
+            } else if (command == "x" || command =="x") {
+                break;
+            }
+        }
+    cout<<"До свидания! "<< endl;
+    
+    return 0;
+    
+    
+}
