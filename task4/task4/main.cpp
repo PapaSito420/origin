@@ -59,104 +59,96 @@ private:
     
 public:
     
-    double add(double a, double b){
-        this->a = a;
-        this->b = b;
+    bool setA(double num1){
+        if(num1 != 0){
+            a = num1;
+            return true;
+        } else { cout<< "Неверный ввод!"<< endl;
+            return false;}
+    }
+    bool setB(double num2){
+        if(num2 != 0){
+            b = num2;
+            return true;
+        } else { cout<< "Неверный ввод!"<< endl;
+            return false;}
+    }
+    
+    double add(){
+        
         double sum = a + b;
         cout<< "num1 + num2 = "<< sum<< endl;
         return sum;
     }
     
-    double multiply(double a, double b){
-        this->a = a;
-        this->b = b;
+    double multiply(){
+        
         double mul = a * b;
         cout<< "num1 * num2 = "<< mul<< endl;
         return mul;
     }
     
-    double subtract_1_2(double a, double b){
-        this->a = a;
-        this->b = b;
+    double subtract_1_2(){
+      
         double sub = a - b;
         cout<< "num1 - num2 = "<< sub<< endl;
         return sub;
     }
 
     
-    double subtract_2_1(double a, double b){
-        this->a = a;
-        this->b = b;
+    double subtract_2_1(){
+      
         double sub2 = b - a;
         cout<< "num2 - num1 = "<< sub2<< endl;
         return sub2;
     }
     
-    double divide_1_2(double a, double b){
-        this->a = a;
-        this->b = b;
+    double divide_1_2(){
+    
         double div = a / b;
         cout<< "num1 / num2 = "<< div<< endl;
         return div;
     }
     
-    double divide_2_1(double a, double b){
-        this->a = a;
-        this->b = b;
+    double divide_2_1(){
+      
         double div2 = b / a;
         cout<< "num2 / num1 = "<< div2<< endl;
         return div2;
     }
     
-    bool set_num1(double a){
-        if(a!=0){
-            this->a = a;
-            return true;
-        } else {
-            cout<<"Невернный ввод!";
-            return false;}
-        
-       
-    }
-//    - метод должен установить значение поля num1 равное значению аргумента num1 в случае, если значение аргумента не равно 0. Возвращает true, если установка произошла успешно, в обратном случае false
-    
-    bool set_num2(double b){
-        if(b!=0){
-            this->b = b;
-            return true;
-        } else {return false;}
-        
-    }
-//    - метод должен установить значение поля num2 равное значению аргумента num2 в случае, если значение аргумента не равно 0. Возвращает true, если установка произошла успешно, в обратном случае false
-    
     
 };
 
+
+
+
 int main ()
 {
-    double a,b;
+    double num1;
+    double num2;
     Calculator Numb;
     
     cout<<"Введите num1: ";
-    cin>> a;
-    while(!Numb.set_num1(a)){
+    cin>> num1;
+    while(!Numb.setA(num1)){
         cout<<"\nВведите num1: ";
-        cin>> a;
+        cin>> num1;
     }
     
     cout<< "\nВведите num2: ";
-    cin>> b;
-    while(!Numb.set_num1(b)){
+    cin>> num2;
+    while(!Numb.setB(num2)){
         cout<<"\nВведите num2: ";
-        cin>> b;
+        cin>> num2;
     }
     cout<< '\n';
-    Numb.add(a,b);
-    Numb.multiply(a,b);
-    Numb.subtract_1_2(a,b);
-    Numb.subtract_2_1(a,b);
-    Numb.divide_1_2(a,b);
-    Numb.divide_2_1(a,b);
+    Numb.add();
+    Numb.multiply();
+    Numb.subtract_1_2();
+    Numb.subtract_2_1();
+    Numb.divide_1_2();
+    Numb.divide_2_1();
     
     return 0;
     
