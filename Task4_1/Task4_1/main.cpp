@@ -52,7 +52,12 @@ private:
     
 public:
     
-    Counter():counter(0) {}
+    Counter():counter(1) {}
+    
+    int setCounter (int value){
+        counter = value;
+        return counter;
+    }
     
     void incr(){
         counter++;
@@ -88,7 +93,7 @@ int main (){
         
         count.setV(value);
                 
-    }
+ 
     
     string command;
     while (true) {
@@ -101,11 +106,31 @@ int main (){
                 count.dec();
             } else if (command == "=") {
                 cout << "Текущее значение счётчика: " << count.get() << endl;
-            } else if (command == "x" || command =="x") {
+            } else if (command == "x" || command =="х") {
                 break;
             }
         }
     cout<<"До свидания! "<< endl;
+    } else if ( answer == "нет"){
+        
+        string command;
+        
+        while (true) {
+            cout << "Введите команду ('+', '-', '=' или 'x'): ";
+            cin >> command;
+        
+        if (command == "+") {
+                    count.incr();
+                } else if (command == "-") {
+                    count.dec();
+                } else if (command == "=") {
+                    cout << "Текущее значение счётчика: " << count.get() << endl;
+                } else if (command == "x" || command =="х") {
+                    break;
+                }
+            }
+        cout<<"До свидания! "<< endl;
+    }
     
     return 0;
     
