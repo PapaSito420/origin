@@ -123,7 +123,7 @@ public:
 
     string getDiscriptions() const override
     {
-        return "Side: a = "+ to_string(sA)+ ", b = " + to_string(sB)+ ", c = " + to_string(sC) + "\nAngles: A = " + to_string(angA) + ", B = " + to_string(angB)+ ", C = "+ to_string(angC);
+        return "Side: a = "+ to_string(sA)+ ", b = " + to_string(sB)+ ", c = " + to_string(sC) + "\nAngles: A = " + to_string(angA) + ", B = " + to_string(angB)+ ", C = "+ to_string(angC)+ "\n";
     }
     
 
@@ -197,7 +197,7 @@ public:
     }
     string getDiscriptions() const override
     {
-        return "Side: a = "+ to_string(sA)+ ", b = " + to_string(sB)+ ", c = " + to_string(sC) + ", d = "+ to_string(sD)+ "\nAngles: A = " + to_string(angA) + ", B = " + to_string(angB)+ ", C = "+ to_string(angC) + ", D = " + to_string(angD);
+        return "Side: a = "+ to_string(sA)+ ", b = " + to_string(sB)+ ", c = " + to_string(sC) + ", d = "+ to_string(sD)+ "\nAngles: A = " + to_string(angA) + ", B = " + to_string(angB)+ ", C = "+ to_string(angC) + ", D = " + to_string(angD)+ "\n";
     }
     int sideCount() const override
     {
@@ -271,9 +271,9 @@ int main(){
     
     
     Triangle tri(10,20,30,50,60,90);
-    Romb quad1(10, 20, 30, 40, 50, 60, 70, 80);
+    Romb quad1(20, 20, 20, 20, 30, 40, 30, 40);
     
-    Figure* romb = &tri;
+    Figure* romb = &quad1;
     
     romb->Info();
     
