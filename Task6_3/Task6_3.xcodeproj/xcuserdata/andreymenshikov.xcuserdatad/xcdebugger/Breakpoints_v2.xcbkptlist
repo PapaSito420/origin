@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "65A92E63-9248-43BB-8E7A-477F5AB3E4A4"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8B72E009-758F-4520-BBA7-6B3DFAA60ED0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Task6_3/main.cpp"
+            startingColumnNumber = "15"
+            endingColumnNumber = "15"
+            startingLineNumber = "200"
+            endingLineNumber = "200"
+            landmarkName = "getDiscriptions()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
