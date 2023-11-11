@@ -8,15 +8,8 @@
 //Ваши фигуры:
 
 //фигура (количество сторон равно 0);
-//треугольник (стороны и углы произвольные, количество сторон равно 3, сумма углов равна 180);
-//прямоугольный треугольник (угол C всегда равен 90);
-//равнобедренный треугольник (стороны a и c равны, углы A и C равны);
-//равносторонний треугольник (все стороны равны, все углы равны 60);
-//четырёхугольник (стороны и углы произвольные, количество сторон равно 4, сумма углов равна 360);
-//прямоугольник (стороны a,c и b,d попарно равны, все углы равны 90);
-//квадрат (все стороны равны, все углы равны 90);
-//параллелограмм (стороны a,c и b,d попарно равны, углы A,C и B,D попарно равны);
-//ромб (все стороны равны, углы A,C и B,D попарно равны).
+
+
 //Вы должны иметь возможность попросить фигуру вывести информацию о себе на консоль, а также узнать, является ли фигура правильной, то есть выполняются ли условия, указанные в списке выше.
 
 //Информация о фигуре включает в себя:
@@ -76,192 +69,221 @@
 using namespace std;
 
 
-class Figure {
-    
-public:
-    virtual string getName() const =0 ;
-    virtual string getDiscriptions() const = 0 ;
-    virtual int sideCount() const = 0 ;
-    virtual bool Type() const = 0 ;
-    
-    virtual void Info()
-    {
-        cout << getName() << endl;
-        if (Type()){
-            cout << "Regular " << endl;
-        } else { cout<< "Non regular"<< endl;}
-        cout<< "Sides counter : "<< sideCount() << endl;
-        cout<< getDiscriptions() << endl;
-    }
-    
-};
+class figure {
+
+    public:
+        
+        virtual int sideCount() const = 0;
+        virtual string getSides() const = 0;
+        virtual string getAngles()const = 0;
+        virtual string getName() const = 0;
+        virtual string Type() const = 0 ;
+        
+      virtual void printInfo()
+      {
+          cout << getName() << endl;
+          cout << Type() << endl;
+          cout << "Sides count: " << sideCount() << endl;
+          cout << getSides() << endl;
+          cout << getAngles()<< endl;
+          cout << "//////////////////////////////////////////////"<< endl;
+      }
+        
+    };
 
 
-class Triangle : public Figure {
+// Sub-classes
+
+class Triangle : public figure {
     
 protected:
-    int sA, sB, sC;
-    int angA, angB, angC;
+    int a,b,c;
+    int A, B, C;
+    string T_name;
 
     
 public:
-    Triangle (int a, int b , int c , int A, int B, int C):  sA(a), sB(b), sC(c),angA(A), angB(B), angC(C){}
+    Triangle(const string& triangle_name, int sidea, int sideb, int sidec, int aA, int aB, int aC): T_name(triangle_name), a(sidea), b(sideb), c(sidec), A(aA),B(aB),C(aC){}
+    
     
     string getName() const override
     {
-        return "Triangle";
+        return T_name;
     }
     int sideCount() const override
     {
         return 3;
     }
-    bool Type() const override
+    string Type() const override
     {
-        return ((angA + angB + angC == 180) || (angC == 90) || (sA == sC && angA == angC) || (sA == sB == sC ));
+        if((A + B + C == 180) || (C == 90) || (A == C && a == c) || (A == B == C )){
+            return "Right";
+        } else {return "Non-regular";}
     }
 
-
-    string getDiscriptions() const override
-    {
-        return "Side: a = "+ to_string(sA)+ ", b = " + to_string(sB)+ ", c = " + to_string(sC) + "\nAngles: A = " + to_string(angA) + ", B = " + to_string(angB)+ ", C = "+ to_string(angC)+ "\n";
+    string getSides() const override {
+        return "Sides: a=" +to_string(a) + " b=" + to_string(b) + " c=" + to_string(c) ;
     }
     
-
-    
+    string getAngles() const override {
+        return "Angles: A=" +to_string(A) + " B=" + to_string(B) + " C=" + to_string(C) ;
+        
+    }
     
 };
 
 ///Sub-triangle types
+/////треугольник (стороны и углы произвольные, количество сторон равно 3, сумма углов равна 180);
+//прямоугольный треугольник (угол C всегда равен 90);
+//равнобедренный треугольник (стороны a и c равны, углы A и C равны);
+//равносторонний треугольник (все стороны равны, все углы равны 60);
 
-class r_Triangle : public Triangle 
+class r_Triangle : public Triangle
 {
-protected:
-    int sA, sB, sC , sD;
-    int angA, angB, angC, angD;
+    
+
+public:
+   r_Triangle(const string &name, int sideA, int sideB)
+        : Triangle(name, sideA, sideB, static_cast<int>(sqrt(sideA * sideA + sideB * sideB)), 90, asin(sideA / sqrt(sideA * sideA + sideB * sideB)) * 180 / M_PI, 90) {}
+  
+    string Type() const override
+    {
+        if(C == 90){
+            return "Right";
+        } else {return "Non-regular";};
+    }
+    
+};
+    
+
+class i_Triangle : public Triangle
+{
     
 public:
-    r_Triangle(int sA, int sB, int sC, int angA, int angB, int angC) : Triangle(sA, sB, sC, angA, angB, angC) {}
-    string getName() const override
+    i_Triangle(const string &name, int sideA, int sideB): Triangle(name, sideA, sideB, sideA, acos((sideA / 2.0) / sideB) * 180 / M_PI, sideA, acos((sideA / 2.0) / sideB) * 180 / M_PI) {}
+    
+    string Type() const override
     {
-        return "Right triangle";
+        if(A == C && a == c){
+            return "Right";
+        } else {return "Non-regular";}
     }
-    void Info() override;
     
 };
 
-class i_Triangle : public Triangle 
-{
-protected:
-    int sA, sB, sC , sD;
-    int angA, angB, angC, angD;
-    
-public:
-    i_Triangle(int a, int b, int c, int A, int B, int C) : Triangle(a, b, c, A, B, C) {}
-    string getName() const override
-    {
-        return "Isosceles triangle";
-    }
- 
-};
 
-class e_Triangle : public Triangle 
-{
-protected:
-    int sA, sB, sC , sD;
-    int angA, angB, angC, angD;
-    
+class e_Triangle : public Triangle {
 public:
-    e_Triangle(int a, int b, int c, int A, int B, int C) : Triangle(a, b, c, A, B, C) {}
-    string getName() const override
+    e_Triangle(const string &name, int side)
+        : Triangle(name, side, side, side, 60, 60, 60) {}
+    string Type() const override
     {
-        return "Equilateral triangle";
+            return "Right";
     }
 };
 
-///Sub-quad types
 
-class Quad: public Figure
+
+class Quad: public figure
 {
     
 protected:
-    int sA, sB, sC , sD;
-    int angA, angB, angC, angD;
+    int a,b,c,d;
+    int A,B,C,D;
+    string Q_name;
    
-    
+ 
 public:
-    Quad(int a, int b , int c, int d, int A, int B, int C, int D): sA(a), sB(b), sC(c), sD(d), angA(A),angB(B), angC(C), angD(D){}
+    Quad (const string& square_name, int sidea, int sideb, int sidec, int sided, int aA, int aB, int aC, int aD): Q_name (square_name), a(sidea), b(sideb), c(sidec), d(sided), A(aA), B(aB), C(aC), D(aD){}
     
-    string getName() const override
-    {
-        return "Quad";
+    string getName() const override {
+        return Q_name;
     }
-    string getDiscriptions() const override
-    {
-        return "Side: a = "+ to_string(sA)+ ", b = " + to_string(sB)+ ", c = " + to_string(sC) + ", d = "+ to_string(sD)+ "\nAngles: A = " + to_string(angA) + ", B = " + to_string(angB)+ ", C = "+ to_string(angC) + ", D = " + to_string(angD)+ "\n";
+    
+    string getSides() const override {
+        return "Sides: a= " +to_string(a) + " b= " + to_string(b) + " c= " + to_string(c) +" d= " + to_string(d);
+    }
+    
+    string getAngles() const override {
+        return "Angles: A= " +to_string(A) + " B= " + to_string(B) + " C= " + to_string(C)+ " D= "+ to_string(D) ;
+        
     }
     int sideCount() const override
     {
         return 4;
     }
-    bool Type() const override
+    string Type() const override
     {
-        return (angA + angB + angC + angD == 360 || (angA == 90 && angB == 90 && angC == 90 && angD == 90) || (angA == angB && angB == angC && angC == angD) || (sA == sB && sB == sC && sC == sD));
+        if((A + B + C + D == 360) || (A == 90 && B == 90 && C == 90 && D == 90) || (A == B && B == C && C == D) || ((a == c && b == d)&&(A + B + C + D == 360))){
+            return "Regular";
+        } else {return "NON - regular ";}
     }
     
-    
 };
 
-class Rectangle : public Quad 
-{
-protected:
-    int sA, sB, sC , sD;
-    int angA, angB, angC, angD;
-    
-public:
-    Rectangle(int a, int b , int c, int d, int A, int B, int C, int D) :Quad (a,b,c,d,A,B,C,D){}
-    
-    string getName() const override{
-        return "Rectangle";
-        }
-};
+///Sub-quad types
+/////четырёхугольник (стороны и углы произвольные, количество сторон равно 4, сумма углов равна 360);
+//прямоугольник (стороны a,c и b,d попарно равны, все углы равны 90);
+//квадрат (все стороны равны, все углы равны 90);
+//параллелограмм (стороны a,c и b,d попарно равны, углы A,C и B,D попарно равны);
+//ромб (все стороны равны, углы A,C и B,D попарно равны).
 
-class Square : public Quad 
-{
-    protected:
-        int sA, sB, sC , sD;
-        int angA, angB, angC, angD;
-        
-    public:
-        string getName() const override{
-        return "Rectangle";
-        }
-};
-
-class Parall : public Quad 
-{
-protected:
-    int sA, sB, sC , sD;
-    int angA, angB, angC, angD;
     
-public:
-    Parall(int a, int b , int c, int d, int A, int B, int C, int D) :Quad (a,b,c,d,A,B,C,D){}
-    string getName() const override{
-        return "Parall";
-    }
-};
-
-class Romb : public Quad 
-{
-protected:
-    int sA, sB, sC , sD;
-    int angA, angB, angC, angD;
+  class Rectangle: public Quad {
+      
+  public :
+      Rectangle( const string& name, int sidea, int sideb,int sidec, int sided):Quad (name,sidea,sideb,sidec,sided,90,90,90,90){}
     
-public:
-    Romb(int a, int b , int c, int d, int A, int B, int C, int D) :Quad (a,b,c,d,A,B,C,D){}
-    string getName() const override{
-        return "Rhombus";
-    }
-};
+      string Type() const override
+      {
+          if((a == c && b == d)&& (A == 90 && B == 90 && C == 90 && D == 90)){
+              return "Regular";
+          } else {return "NON - regular ";}
+      }
+  };
+
+  class Square: public Quad {
+  public:
+      Square(const string& name, int sidea): Quad (name,sidea,sidea,sidea,sidea,90,90,90,90){}
+      
+      string Type() const override
+      {
+          if((A == 90 && B == 90 && C == 90 && D == 90) || (A == B && B == C && C == D)){
+              return "Regular";
+          } else {return "NON - regular ";}
+      }
+      };
+
+
+  class Parallelogram : public Quad {
+  public:
+          Parallelogram(const string &name, int sideA, int sideB, int angle)
+              : Quad(name, sideA, sideB, sideA, sideB, angle, 180 - angle, angle, 180 - angle) {}
+      
+      string Type() const override
+      {
+          if((a == c && b == d)&&(A==C&&B==D)){
+              return "Regular";
+          } else {return "NON - regular ";}
+      }
+      };
+
+  class Rhombus : public Quad {
+  public:
+          Rhombus(const string &name, int side, int angle)
+              : Quad(name, side, side, side, side, angle, 180 - angle, angle, 180 - angle) {}
+      
+      string Type() const override
+      {
+          if((a == c&&b==c && c == d)&&(A==C&&B==D)){
+              return "Regular";
+          } else {return "NON - regular ";}
+      }
+      
+      };
+
+      
+
 
 
 
@@ -270,16 +292,24 @@ public:
 int main(){
     
     
-    Triangle tri(10,20,30,50,60,90);
-    Romb quad1(20, 20, 20, 20, 30, 40, 30, 40);
+r_Triangle rightTriangle("Right Triangle", 3, 4);
+i_Triangle isoscelesTriangle("Isosceles Triangle", 5, 6);
+e_Triangle equilateralTriangle("Equilateral Triangle", 7);
+Rectangle rectangle("Rectangle", 8, 9,8,9);
+Square square("Square", 10);
+Parallelogram parallelogram("Parallelogram", 11, 12, 60);
+Rhombus rhombus("Rhombus", 13, 30);
+
+rightTriangle.printInfo();
+isoscelesTriangle.printInfo();
+equilateralTriangle.printInfo();
+rectangle.printInfo();
+square.printInfo();
+parallelogram.printInfo();
+rhombus.printInfo();
+
     
-    Figure* romb = &quad1;
-    
-    romb->Info();
-    
-    
-    tri.Info();
-    
+
     
     return 0;
     
