@@ -128,14 +128,7 @@ class i_Triangle : public triangle
 public:
     i_Triangle(const string &name, int sideA, int sideB)
     // в данном решении для конструктора я взял в открытом доступе подход к геометрическим формулам через код. Это обычные мат. правила.
-           : triangle(name, sideA, sideB, sideB, acos((sideA / 2.0) / sideB) * 180 / M_PI, sideA, acos((sideA / 2.0) / sideB) * 180 / M_PI) {
-           if (sideA >= sideB * 2) {
-               
-           } else {
-               
-               T_name = "Invalid Isosceles Triangle";
-           }
-       }
+    : triangle(name, sideA, sideB, sideB, acos((sideA / 2.0) / sideB) * 180 / M_PI, sideA, acos((sideA / 2.0) / sideB) * 180 / M_PI) {}
 };
 
 
