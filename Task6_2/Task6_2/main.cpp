@@ -118,7 +118,7 @@ class r_Triangle : public triangle
 
 public:
    r_Triangle(const string &name, int sideA, int sideB)
-        : triangle(name, sideA, sideB, static_cast<int>(sqrt(sideA * sideA + sideB * sideB)), 90, asin(sideA / sqrt(sideA * sideA + sideB * sideB)) * 180 / M_PI, 90) {}
+        :  {}
 };
     
 
