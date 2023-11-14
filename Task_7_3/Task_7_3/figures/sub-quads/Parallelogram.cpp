@@ -6,3 +6,5 @@
 //
 
 #include "Parallelogram.hpp"
+
+Parr::Parr( const string& name, int a, int b, int A, int B ): Quad (name, a,b,a,b,A,B,A,B){}

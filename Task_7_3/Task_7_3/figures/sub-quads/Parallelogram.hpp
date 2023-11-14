@@ -7,7 +7,13 @@
 
 #ifndef Parallelogram_hpp
 #define Parallelogram_hpp
-
+#include "quadrilateral.hpp"
 #include <stdio.h>
+
+
+class Parr: public Quad {
+public:
+    Parr( const string& name, int a, int b ,int A, int B);
+}; 
 
 #endif /* Parallelogram_hpp */

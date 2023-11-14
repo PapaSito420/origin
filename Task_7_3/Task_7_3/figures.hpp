@@ -10,10 +10,14 @@
 #include <iostream>
 #include <stdio.h>
 
+
 class figure {
 
 public:
-    figure(const std::string& triangle_name, int sidea, int sideb, int sidec, int aA, int aB, int aC);
+    virtual ~figure() = default;
+    figure(const std::string& name, int sidea, int sideb, int sidec,  int aA, int aB, int aC);
+    figure(const std::string& name, int sidea, int sideb, int sidec,int sided , int aA, int aB, int aC, int aD);
+
     virtual std:: string getSides() const = 0;
     virtual std:: string getAngles() const = 0;
     virtual std:: string getName()  const = 0;

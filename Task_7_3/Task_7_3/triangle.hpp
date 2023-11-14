@@ -10,7 +10,7 @@
 #include "figures.hpp"
 #include <stdio.h>
 
-class triangle:figure{
+class triangle: figure{
 protected:
     int a,b,c;
     int A,B,C;
