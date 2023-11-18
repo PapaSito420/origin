@@ -1,17 +1,13 @@
 //
 //  r_Triangle.cpp
-//  Task_7_3
+//  Task_9_2
 //
-//  Created by Andrey Menshikov on 12.11.2023.
+//  Created by Andrey Menshikov on 18.11.2023.
 //
-
 #include "r_Triangle.hpp"
 #include <cmath>
 
 
 
-
-r_Triangle::r_Triangle(const std::string &name, int sideA, int sideB)
-        :triangle(name, sideA, sideB, static_cast<int>(sqrt(sideA * sideA + sideB * sideB)), 90, asin(sideA / sqrt(sideA * sideA + sideB * sideB)) * 180 / M_PI, 90) {}
-    
+r_Triangle::r_Triangle(const string& name,int a, int b): Triangle (name,a, b, int(sqrt(a * a + b * b)), 90, asin(static_cast<double>(b) / sqrt(a * a + b * b)) * 180 / M_PI, 90 - asin(static_cast<double>(b) / sqrt(a * a + b * b)) * 180 / M_PI){}
 

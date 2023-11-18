@@ -2,26 +2,28 @@
 //  triangle.hpp
 //  Task_7_3
 //
-//  Created by Andrey Menshikov on 12.11.2023.
+//  Created by Andrey Menshikov on 13.11.2023.
 //
 
 #ifndef triangle_hpp
 #define triangle_hpp
-#include "figures.hpp"
 #include <stdio.h>
+#include "Figures.hpp"
 
-class triangle: figure{
+class Triangle : public Figure {
 protected:
-    int a,b,c;
-    int A,B,C;
-    std:: string T_name;
+    
+    int sideA,sideB,sideC;
+    int angA,angB,angC;
+    string T_name;
     
 public:
-    triangle(const std::string& triangle_name, int sidea, int sideb, int sidec, int aA, int aB, int aC);
+    Triangle ( const string& name , int a,int b, int c, int A, int B, int C);
     
-     std:: string getSides() const = 0;
-     std:: string getAngles() const = 0;
-     std:: string getName()  const = 0;
+    string getSides() const override;
+    string getAngles() const override;
+    string getName() const override;
+
     
 };
 

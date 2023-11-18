@@ -1,29 +1,19 @@
 //
 //  Rectangle.hpp
-//  Task_7_3
+//  Task_9_2
 //
-//  Created by Andrey Menshikov on 12.11.2023.
+//  Created by Andrey Menshikov on 18.11.2023.
 //
 
 #ifndef Rectangle_hpp
 #define Rectangle_hpp
-#include "figures.hpp"
+#include "quadrilateral.hpp"
 #include <stdio.h>
+#include <cmath>
 
-class Rectangle : figure{
-protected:
-    int a,b,c,d;
-    int A,B,C,D;
-    std::string Q_name;
+class Rectangle : public Quad {
 public:
-    Rectangle(const std::string& name, int sidea, int sideb,int sidec, int sided);
+    Rectangle(const string& name,int a, int b);
     
-     std:: string getSides() const = 0;
-     std:: string getAngles() const = 0;
-     std:: string getName()  const = 0;
-    
-      
 };
-
-
 #endif /* Rectangle_hpp */
