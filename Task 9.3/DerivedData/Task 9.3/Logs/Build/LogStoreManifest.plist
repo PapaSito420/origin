@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>0A901F9E-CCF1-4296-A4F1-6851E22CE187</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>0A901F9E-CCF1-4296-A4F1-6851E22CE187.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>2</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Task 9.3 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Task 9.3</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Task 9.3</string>
+			<key>timeStartedRecording</key>
+			<real>722007246.84440303</real>
+			<key>timeStoppedRecording</key>
+			<real>722007247.33750904</real>
+			<key>title</key>
+			<string>Build Task 9.3</string>
+			<key>uniqueIdentifier</key>
+			<string>0A901F9E-CCF1-4296-A4F1-6851E22CE187</string>
+		</dict>
+		<key>2B552907-B25E-49B9-AABA-AC253E77D63C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>2B552907-B25E-49B9-AABA-AC253E77D63C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>2</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Task 9.3 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Task 9.3</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Task 9.3</string>
+			<key>timeStartedRecording</key>
+			<real>722006739.61403894</real>
+			<key>timeStoppedRecording</key>
+			<real>722006741.50050497</real>
+			<key>title</key>
+			<string>Build Task 9.3</string>
+			<key>uniqueIdentifier</key>
+			<string>2B552907-B25E-49B9-AABA-AC253E77D63C</string>
+		</dict>
+		<key>4B1F0D23-F659-489C-B1FC-C8324C796812</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>4B1F0D23-F659-489C-B1FC-C8324C796812.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>2</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Task 9.3 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Task 9.3</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Task 9.3</string>
+			<key>timeStartedRecording</key>
+			<real>722006759.91063702</real>
+			<key>timeStoppedRecording</key>
+			<real>722006760.51056802</real>
+			<key>title</key>
+			<string>Build Task 9.3</string>
+			<key>uniqueIdentifier</key>
+			<string>4B1F0D23-F659-489C-B1FC-C8324C796812</string>
+		</dict>
+		<key>80B82308-4535-44E0-9903-AF8DA8EA945C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>80B82308-4535-44E0-9903-AF8DA8EA945C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>2</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Task 9.3 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Task 9.3</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Task 9.3</string>
+			<key>timeStartedRecording</key>
+			<real>722007282.18684697</real>
+			<key>timeStoppedRecording</key>
+			<real>722007282.28241301</real>
+			<key>title</key>
+			<string>Build Task 9.3</string>
+			<key>uniqueIdentifier</key>
+			<string>80B82308-4535-44E0-9903-AF8DA8EA945C</string>
+		</dict>
+		<key>DB1F85DE-CB09-4ED6-B8E1-9C26D75E760F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>DB1F85DE-CB09-4ED6-B8E1-9C26D75E760F.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>2</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Task 9.3 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Task 9.3</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Task 9.3</string>
+			<key>timeStartedRecording</key>
+			<real>722007006.20577002</real>
+			<key>timeStoppedRecording</key>
+			<real>722007006.84406996</real>
+			<key>title</key>
+			<string>Build Task 9.3</string>
+			<key>uniqueIdentifier</key>
+			<string>DB1F85DE-CB09-4ED6-B8E1-9C26D75E760F</string>
+		</dict>
+		<key>FA3CA12D-90F4-4074-9991-5D7E7D9F3603</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>FA3CA12D-90F4-4074-9991-5D7E7D9F3603.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>2</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Task 9.3 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Task 9.3</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Task 9.3</string>
+			<key>timeStartedRecording</key>
+			<real>722007278.23850298</real>
+			<key>timeStoppedRecording</key>
+			<real>722007281.89461803</real>
+			<key>title</key>
+			<string>Build Task 9.3</string>
+			<key>uniqueIdentifier</key>
+			<string>FA3CA12D-90F4-4074-9991-5D7E7D9F3603</string>
+		</dict>
+		<key>FA4A072E-8C4F-4D09-8C6A-05A0CE504400</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>FA4A072E-8C4F-4D09-8C6A-05A0CE504400.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>2</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Task 9.3 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Task 9.3</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Task 9.3</string>
+			<key>timeStartedRecording</key>
+			<real>722006979.17242396</real>
+			<key>timeStoppedRecording</key>
+			<real>722006980.46612799</real>
+			<key>title</key>
+			<string>Build Task 9.3</string>
+			<key>uniqueIdentifier</key>
+			<string>FA4A072E-8C4F-4D09-8C6A-05A0CE504400</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
