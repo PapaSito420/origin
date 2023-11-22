@@ -61,6 +61,18 @@
 Стороны: a=30 b=30 c=30 d=30
 Углы: A=30 B=40 C=30 D=40
  
+ 
+ 
+ 
+ 
+ Задание 2
+ В целом подход правильный, но есть замечания:
+
+ Нужно добавить остальные фигуры: прямоугольный треугольник, параллелограмм и т.д.
+ Нужно еще добавить функцию print_info. Функция print_info принимает в качестве аргумента указатель на класс Figure и вызывает у него метод print_info который выводит информацию о фигуре. Именно через эту функцию и нужно выводить информацию о фигурах из main.
+ Нужно исправить замечания.
+ 
+ 
 */
 
 #include <iostream>
@@ -92,10 +104,10 @@ class triangle : public figure {
 protected:
     int a,b,c;
     int A,B,C;
-    string T_name;
+    string T_name ="Triangle";
     
 public:
-    triangle(const string& triangle_name, int sidea, int sideb, int sidec, int aA, int aB, int aC): T_name(triangle_name), a(sidea), b(sideb), c(sidec), A(aA),B(aB),C(aC){}
+    triangle( int sidea, int sideb, int sidec, int aA, int aB, int aC): a(sidea), b(sideb), c(sidec), A(aA),B(aB),C(aC){}
     
     string getName() const override {
         return T_name;
@@ -117,8 +129,11 @@ class r_Triangle : public triangle
     
 
 public:
-   r_Triangle(const string &name, int sideA, int sideB)
-        :  {}
+    r_Triangle(int sideA, int sideB ,int sideC, int angA, int angB): triangle ( sideA,sideB,sideC, angA,angB,90){}
+    
+    string getName(){
+        return "r_Triangle";
+    }
 };
     
 
@@ -126,16 +141,24 @@ class i_Triangle : public triangle
 {
     
 public:
-    i_Triangle(const string &name, int sideA, int sideB)
+    i_Triangle( int sideA, int sideB)
     // в данном решении для конструктора я взял в открытом доступе подход к геометрическим формулам через код. Это обычные мат. правила.
-    : triangle(name, sideA, sideB, sideB, acos((sideA / 2.0) / sideB) * 180 / M_PI, sideA, acos((sideA / 2.0) / sideB) * 180 / M_PI) {}
+    : triangle( sideA, sideB, sideB, acos((sideA / 2.0) / sideB) * 180 / M_PI, sideA, acos((sideA / 2.0) / sideB) * 180 / M_PI) {}
+    string getName(){
+        return "i_Triangle";
+    }
 };
 
 
 class e_Triangle : public triangle {
+
+    
 public:
-    e_Triangle(const string &name, int side)
-        : triangle(name, side, side, side, 60, 60, 60) {}
+    e_Triangle( int side)
+        : triangle( side, side, side, 60, 60, 60) {}
+    string getName(){
+        return "r_Triangle";
+    }
 };
 
 
@@ -149,7 +172,7 @@ class quad : public figure {
         string Q_name;
         
     public:
-        quad (const string& square_name, int sidea, int sideb, int sidec, int sided, int aA, int aB, int aC, int aD): Q_name (square_name), a(sidea), b(sideb), c(sidec), d(sided), A(aA), B(aB), C(aC), D(aD){}
+        quad (int sidea, int sideb, int sidec, int sided, int aA, int aB, int aC, int aD):  a(sidea), b(sideb), c(sidec), d(sided), A(aA), B(aB), C(aC), D(aD){}
         
         string getName() const override {
             return Q_name;
@@ -168,47 +191,67 @@ class quad : public figure {
 class Rectangle: public quad {
     
 public :
-    Rectangle( const string& name, int sidea, int sideb,int sidec, int sided):quad (name,sidea,sideb,sidec,sided,90,90,90,90){}
+    Rectangle (int sidea, int sideb,int sidec, int sided):quad (sidea,sideb,sidec,sided,90,90,90,90){}
+    string getName(){
+        return "Rectangle";
+    }
       
 };
 
 class Square: public quad {
 public:
-    Square(const string& name, int sidea): quad (name,sidea,sidea,sidea,sidea,90,90,90,90){}
+    Square(int sidea): quad (sidea,sidea,sidea,sidea,90,90,90,90){}
+    string getName(){
+        return "Square";
+    }
+
     };
 
 class Parallelogram : public quad {
 public:
-        Parallelogram(const string &name, int sideA, int sideB, int angle)
-            : quad(name, sideA, sideB, sideA, sideB, angle, 180 - angle, angle, 180 - angle) {}
+        Parallelogram( int sideA, int sideB, int angle)
+            : quad( sideA, sideB, sideA, sideB, angle, 180 - angle, angle, 180 - angle) {}
+    string getName(){
+        return "Parallelogram";
+    }
+
     };
 
 class Rhombus : public quad {
 public:
-        Rhombus(const string &name, int side, int angle)
-            : quad(name, side, side, side, side, angle, 180 - angle, angle, 180 - angle) {}
+        Rhombus( int side, int angle)
+            : quad( side, side, side, side, angle, 180 - angle, angle, 180 - angle) {}
+    string getName(){
+        return "Parallelogram";
+    }
     };
 
     
 
+void print_info(figure *fig){
+    fig->printInfo();
+}
+
 
 int main(){
         
-r_Triangle rightTriangle("Right Triangle", 3, 4);
-i_Triangle isoscelesTriangle("Isosceles Triangle", 5, 6);
-e_Triangle equilateralTriangle("Equilateral Triangle", 7);
-Rectangle rectangle("Rectangle", 8, 9,8,9);
-Square square("Square", 10);
-Parallelogram parallelogram("Parallelogram", 11, 12, 60);
-Rhombus rhombus("Rhombus", 13, 30);
+r_Triangle rightTriangle( 4,3,4,40,45);
+i_Triangle isoscelesTriangle(5, 6);
+e_Triangle equilateralTriangle( 7);
+Rectangle rectangle(8, 9,8,9);
+Square square(10);
+Parallelogram parallelogram(11, 12, 60);
+Rhombus rhombus( 30, 45);
 
-    rightTriangle.printInfo();
-    isoscelesTriangle.printInfo();
-    equilateralTriangle.printInfo();
-    rectangle.printInfo();
-    square.printInfo();
-    parallelogram.printInfo();
-    rhombus.printInfo();
+//    rightTriangle.printInfo();
+//    isoscelesTriangle.printInfo();
+//    equilateralTriangle.printInfo();
+//    rectangle.printInfo();
+//    square.printInfo();
+//    parallelogram.printInfo();
+//    rhombus.printInfo();
+    
+    print_info(&square);
 
     return 0;
     
