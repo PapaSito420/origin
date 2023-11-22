@@ -77,12 +77,14 @@ class figure {
         virtual string getSides() const = 0;
         virtual string getAngles()const = 0;
         virtual string getName() const = 0;
-        virtual string Type() const = 0 ;
+        virtual bool Type() const = 0 ;
         
       virtual void printInfo()
       {
           cout << getName() << endl;
-          cout << Type() << endl;
+          if (Type()== true){
+              cout <<"Правильная"<< endl;
+          }else {cout <<"! Неправильная !"<< endl;}
           cout << "Sides count: " << sideCount() << endl;
           cout << getSides() << endl;
           cout << getAngles()<< endl;
@@ -103,7 +105,7 @@ protected:
 
     
 public:
-    Triangle(const string& triangle_name, int sidea, int sideb, int sidec, int aA, int aB, int aC): T_name(triangle_name), a(sidea), b(sideb), c(sidec), A(aA),B(aB),C(aC){}
+    Triangle( int sidea, int sideb, int sidec, int aA, int aB, int aC):  a(sidea), b(sideb), c(sidec), A(aA),B(aB),C(aC){}
     
     
     string getName() const override
@@ -114,11 +116,10 @@ public:
     {
         return 3;
     }
-    string Type() const override
+    bool Type() const override
     {
-        if((A + B + C == 180) || (C == 90) || (A == C && a == c) || (A == B == C )){
-            return "Right";
-        } else {return "Non-regular";}
+        return ((A+B+C)==180&& ((a + b > c) && (a + b > c) && (b + c > a)));
+            
     }
 
     string getSides() const override {
@@ -143,14 +144,17 @@ class r_Triangle : public Triangle
     
 
 public:
-   r_Triangle(const string &name, int sideA, int sideB)
-        : Triangle(name, sideA, sideB, static_cast<int>(sqrt(sideA * sideA + sideB * sideB)), 90, asin(sideA / sqrt(sideA * sideA + sideB * sideB)) * 180 / M_PI, 90) {}
+   r_Triangle( int sideA, int sideB)
+        : Triangle(sideA, sideB, static_cast<int>(sqrt(sideA * sideA + sideB * sideB)), 90, asin(sideA / sqrt(sideA * sideA + sideB * sideB)) * 180 / M_PI, 90) {}
   
-    string Type() const override
+    bool Type() const override
     {
         if(C == 90){
-            return "Right";
-        } else {return "Non-regular";};
+            return true;
+        } else {return false;};
+    }
+    string getName() const override {
+        return "r_Triangle";
     }
     
 };
@@ -160,26 +164,28 @@ class i_Triangle : public Triangle
 {
     
 public:
-    i_Triangle(const string &name, int sideA, int sideB): Triangle(name, sideA, sideB, sideA, acos((sideA / 2.0) / sideB) * 180 / M_PI, sideA, acos((sideA / 2.0) / sideB) * 180 / M_PI) {}
+    i_Triangle(int sideA, int sideB): Triangle( sideA, sideB, sideA, acos((sideA / 2.0) / sideB) * 180 / M_PI, sideA, acos((sideA / 2.0) / sideB) * 180 / M_PI) {}
     
-    string Type() const override
+    bool Type() const override
     {
-        if(A == C && a == c){
-            return "Right";
-        } else {return "Non-regular";}
+        return (A == C && a == c);
+        
     }
+    string getName() const override {
+            return "i_Triangle";
+        }
+    
     
 };
 
 
 class e_Triangle : public Triangle {
 public:
-    e_Triangle(const string &name, int side)
-        : Triangle(name, side, side, side, 60, 60, 60) {}
-    string Type() const override
-    {
-            return "Right";
-    }
+    e_Triangle(int side)
+        : Triangle( side, side, side, 60, 60, 60) {}
+    string getName() const override {
+            return "i_Triangle";
+        }
 };
 
 
@@ -194,7 +200,7 @@ protected:
    
  
 public:
-    Quad (const string& square_name, int sidea, int sideb, int sidec, int sided, int aA, int aB, int aC, int aD): Q_name (square_name), a(sidea), b(sideb), c(sidec), d(sided), A(aA), B(aB), C(aC), D(aD){}
+    Quad (int sidea, int sideb, int sidec, int sided, int aA, int aB, int aC, int aD): a(sidea), b(sideb), c(sidec), d(sided), A(aA), B(aB), C(aC), D(aD){}
     
     string getName() const override {
         return Q_name;
@@ -212,12 +218,10 @@ public:
     {
         return 4;
     }
-    string Type() const override
+    bool Type() const override
     {
-        if((A + B + C + D == 360) || (A == 90 && B == 90 && C == 90 && D == 90) || (A == B && B == C && C == D) || ((a == c && b == d)&&(A + B + C + D == 360))){
-            return "Regular";
-        } else {return "NON - regular ";}
-    }
+        return((A + B + C + D == 360) || (A == 90 && B == 90 && C == 90 && D == 90) || (A == B && B == C && C == D) || ((a == c && b == d)&&(A + B + C + D == 360)));
+        }
     
 };
 
@@ -232,57 +236,68 @@ public:
   class Rectangle: public Quad {
       
   public :
-      Rectangle( const string& name, int sidea, int sideb,int sidec, int sided):Quad (name,sidea,sideb,sidec,sided,90,90,90,90){}
+      Rectangle( int sidea, int sideb,int sidec, int sided):Quad (sidea,sideb,sidec,sided,90,90,90,90){}
     
-      string Type() const override
+      bool Type() const override
       {
-          if((a == c && b == d)&& (A == 90 && B == 90 && C == 90 && D == 90)){
-              return "Regular";
-          } else {return "NON - regular ";}
+          return((a == c && b == d)&& (A == 90 && B == 90 && C == 90 && D == 90));
       }
+      
+      string getName() const override {
+          return "Rectangle";
+      }
+       
   };
 
   class Square: public Quad {
   public:
-      Square(const string& name, int sidea): Quad (name,sidea,sidea,sidea,sidea,90,90,90,90){}
+      Square(int sidea): Quad (sidea,sidea,sidea,sidea,80,90,90,90){} // ПОСТАВИЛ  А= 80 для проверки условий!
       
-      string Type() const override
+      bool Type() const override
       {
-          if((A == 90 && B == 90 && C == 90 && D == 90) || (A == B && B == C && C == D)){
-              return "Regular";
-          } else {return "NON - regular ";}
+          return((A == 90 && B == 90 && C == 90 && D == 90) || (A == B && B == C && C == D));
+          
+          }
+      string getName() const override {
+          return "Square";
       }
       };
 
 
   class Parallelogram : public Quad {
   public:
-          Parallelogram(const string &name, int sideA, int sideB, int angle)
-              : Quad(name, sideA, sideB, sideA, sideB, angle, 180 - angle, angle, 180 - angle) {}
+          Parallelogram( int sideA, int sideB, int angle)
+              : Quad( sideA, sideB, sideA, sideB, angle, 180 - angle, angle, 180 - angle) {}
       
-      string Type() const override
+      bool Type() const override
       {
-          if((a == c && b == d)&&(A==C&&B==D)){
-              return "Regular";
-          } else {return "NON - regular ";}
+          return ((a == c && b == d)&&(A==C&&B==D));
       }
+      
+      string getName() const override {
+          return "Parallelogram";
+      }
+          
       };
 
   class Rhombus : public Quad {
   public:
-          Rhombus(const string &name, int side, int angle)
-              : Quad(name, side, side, side, side, angle, 180 - angle, angle, 180 - angle) {}
+          Rhombus (int side, int angle)
+              : Quad( side, side, side, side, angle, 180 - angle, angle, 180 - angle) {}
       
-      string Type() const override
+      bool Type() const override
       {
-          if((a == c&&b==c && c == d)&&(A==C&&B==D)){
-              return "Regular";
-          } else {return "NON - regular ";}
+          return((a == c&&b==c && c == d)&&(A==C&&B==D));
       }
       
+      string getName() const override {
+          return "Romb";
+      }
       };
 
-      
+void print_info ( figure * fig) {
+    fig->printInfo();
+}
 
 
 
@@ -292,21 +307,25 @@ public:
 int main(){
     
     
-r_Triangle rightTriangle("Right Triangle", 3, 4);
-i_Triangle isoscelesTriangle("Isosceles Triangle", 5, 6);
-e_Triangle equilateralTriangle("Equilateral Triangle", 7);
-Rectangle rectangle("Rectangle", 8, 9,8,9);
-Square square("Square", 10);
-Parallelogram parallelogram("Parallelogram", 11, 12, 60);
-Rhombus rhombus("Rhombus", 13, 30);
+r_Triangle rightTriangle(3, 4);
+i_Triangle isoscelesTriangle(5, 6);
+e_Triangle equilateralTriangle(7);
+Rectangle rectangle( 8, 9,8,9);
+Square square(10);
+Parallelogram parallelogram(11, 12, 60);
+Rhombus rhombus(13, 30);
 
-rightTriangle.printInfo();
-isoscelesTriangle.printInfo();
-equilateralTriangle.printInfo();
-rectangle.printInfo();
-square.printInfo();
-parallelogram.printInfo();
-rhombus.printInfo();
+//rightTriangle.printInfo();
+//isoscelesTriangle.printInfo();
+//equilateralTriangle.printInfo();
+//rectangle.printInfo();
+//square.printInfo();
+//parallelogram.printInfo();
+//rhombus.printInfo();
+//    
+    print_info(&rightTriangle);
+    print_info(&square);
+    print_info(&rhombus);
 
     
 
@@ -314,7 +333,3 @@ rhombus.printInfo();
     return 0;
     
 }
-
-
-
-
