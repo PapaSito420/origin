@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D86A21FF2B1380CF0043035B /* CMakeList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D86A21FD2B1380CF0043035B /* CMakeList.cpp */; };
-		D8A30DF02AF64C6B00A93365 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8A30DEF2AF64C6B00A93365 /* main.cpp */; };
+		D86A21F22B1375C90043035B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D86A21F12B1375C90043035B /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		D8A30DEA2AF64C6B00A93365 /* CopyFiles */ = {
+		D86A21EC2B1375C90043035B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,15 +23,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D86A21FC2B137F410043035B /* CMakeList.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeList.txt; sourceTree = "<group>"; };
-		D86A21FD2B1380CF0043035B /* CMakeList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CMakeList.cpp; sourceTree = "<group>"; };
-		D86A21FE2B1380CF0043035B /* CMakeList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CMakeList.hpp; sourceTree = "<group>"; };
-		D8A30DEC2AF64C6B00A93365 /* Task6_3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Task6_3; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8A30DEF2AF64C6B00A93365 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D86A21EE2B1375C90043035B /* My_first_CMake_project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = My_first_CMake_project; sourceTree = BUILT_PRODUCTS_DIR; };
+		D86A21F12B1375C90043035B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D86A21FB2B1377270043035B /* CMakeList.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeList.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D8A30DE92AF64C6B00A93365 /* Frameworks */ = {
+		D86A21EB2B1375C90043035B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,68 +39,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D8A30DE32AF64C6B00A93365 = {
+		D86A21E52B1375C90043035B = {
 			isa = PBXGroup;
 			children = (
-				D8A30DEE2AF64C6B00A93365 /* Task6_3 */,
-				D8A30DED2AF64C6B00A93365 /* Products */,
+				D86A21F02B1375C90043035B /* My_first_CMake_project */,
+				D86A21EF2B1375C90043035B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D8A30DED2AF64C6B00A93365 /* Products */ = {
+		D86A21EF2B1375C90043035B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D8A30DEC2AF64C6B00A93365 /* Task6_3 */,
+				D86A21EE2B1375C90043035B /* My_first_CMake_project */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D8A30DEE2AF64C6B00A93365 /* Task6_3 */ = {
+		D86A21F02B1375C90043035B /* My_first_CMake_project */ = {
 			isa = PBXGroup;
 			children = (
-				D8A30DEF2AF64C6B00A93365 /* main.cpp */,
-				D86A21FC2B137F410043035B /* CMakeList.txt */,
-				D86A21FD2B1380CF0043035B /* CMakeList.cpp */,
-				D86A21FE2B1380CF0043035B /* CMakeList.hpp */,
+				D86A21F12B1375C90043035B /* main.cpp */,
+				D86A21FB2B1377270043035B /* CMakeList.txt */,
 			);
-			path = Task6_3;
+			path = My_first_CMake_project;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D8A30DEB2AF64C6B00A93365 /* Task6_3 */ = {
+		D86A21ED2B1375C90043035B /* My_first_CMake_project */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D8A30DF32AF64C6B00A93365 /* Build configuration list for PBXNativeTarget "Task6_3" */;
+			buildConfigurationList = D86A21F52B1375C90043035B /* Build configuration list for PBXNativeTarget "My_first_CMake_project" */;
 			buildPhases = (
-				D8A30DE82AF64C6B00A93365 /* Sources */,
-				D8A30DE92AF64C6B00A93365 /* Frameworks */,
-				D8A30DEA2AF64C6B00A93365 /* CopyFiles */,
+				D86A21EA2B1375C90043035B /* Sources */,
+				D86A21EB2B1375C90043035B /* Frameworks */,
+				D86A21EC2B1375C90043035B /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Task6_3;
-			productName = Task6_3;
-			productReference = D8A30DEC2AF64C6B00A93365 /* Task6_3 */;
+			name = My_first_CMake_project;
+			productName = My_first_CMake_project;
+			productReference = D86A21EE2B1375C90043035B /* My_first_CMake_project */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D8A30DE42AF64C6B00A93365 /* Project object */ = {
+		D86A21E62B1375C90043035B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					D8A30DEB2AF64C6B00A93365 = {
+					D86A21ED2B1375C90043035B = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
 				};
 			};
-			buildConfigurationList = D8A30DE72AF64C6B00A93365 /* Build configuration list for PBXProject "Task6_3" */;
+			buildConfigurationList = D86A21E92B1375C90043035B /* Build configuration list for PBXProject "My_first_CMake_project" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -111,30 +106,29 @@
 				en,
 				Base,
 			);
-			mainGroup = D8A30DE32AF64C6B00A93365;
-			productRefGroup = D8A30DED2AF64C6B00A93365 /* Products */;
+			mainGroup = D86A21E52B1375C90043035B;
+			productRefGroup = D86A21EF2B1375C90043035B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D8A30DEB2AF64C6B00A93365 /* Task6_3 */,
+				D86A21ED2B1375C90043035B /* My_first_CMake_project */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D8A30DE82AF64C6B00A93365 /* Sources */ = {
+		D86A21EA2B1375C90043035B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8A30DF02AF64C6B00A93365 /* main.cpp in Sources */,
-				D86A21FF2B1380CF0043035B /* CMakeList.cpp in Sources */,
+				D86A21F22B1375C90043035B /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		D8A30DF12AF64C6B00A93365 /* Debug */ = {
+		D86A21F32B1375C90043035B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -195,7 +189,7 @@
 			};
 			name = Debug;
 		};
-		D8A30DF22AF64C6B00A93365 /* Release */ = {
+		D86A21F42B1375C90043035B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -249,7 +243,7 @@
 			};
 			name = Release;
 		};
-		D8A30DF42AF64C6B00A93365 /* Debug */ = {
+		D86A21F62B1375C90043035B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -257,7 +251,7 @@
 			};
 			name = Debug;
 		};
-		D8A30DF52AF64C6B00A93365 /* Release */ = {
+		D86A21F72B1375C90043035B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -268,25 +262,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D8A30DE72AF64C6B00A93365 /* Build configuration list for PBXProject "Task6_3" */ = {
+		D86A21E92B1375C90043035B /* Build configuration list for PBXProject "My_first_CMake_project" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D8A30DF12AF64C6B00A93365 /* Debug */,
-				D8A30DF22AF64C6B00A93365 /* Release */,
+				D86A21F32B1375C90043035B /* Debug */,
+				D86A21F42B1375C90043035B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D8A30DF32AF64C6B00A93365 /* Build configuration list for PBXNativeTarget "Task6_3" */ = {
+		D86A21F52B1375C90043035B /* Build configuration list for PBXNativeTarget "My_first_CMake_project" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D8A30DF42AF64C6B00A93365 /* Debug */,
-				D8A30DF52AF64C6B00A93365 /* Release */,
+				D86A21F62B1375C90043035B /* Debug */,
+				D86A21F72B1375C90043035B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D8A30DE42AF64C6B00A93365 /* Project object */;
+	rootObject = D86A21E62B1375C90043035B /* Project object */;
 }

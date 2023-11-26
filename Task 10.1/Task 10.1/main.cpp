@@ -29,40 +29,24 @@ int denominator_;
 public:
     Fraction(int numerator, int denominator): numerator_(numerator), denominator_(denominator){}
     
+    bool operator == (const Fraction &other) const {
+        return ( numerator_ == other.numerator_ && denominator_ == other.denominator_);
+    }
     
-       bool operator==(const Fraction& other) const {
-           return numerator_ * other.denominator_ == denominator_ * other.numerator_;
-       }
-
-       
-       bool operator!=(const Fraction& other) const {
-           return !(*this == other);
-       }
-
-       
-       bool operator<(const Fraction& other) const {
-           return numerator_ * other.denominator_ < denominator_ * other.numerator_;
-       }
-
-       
-       bool operator>(const Fraction& other) const {
-           return other < *this;
-       }
-
-       
-       bool operator<=(const Fraction& other) const {
-           return !(*this > other);
-       }
-
-       
-       bool operator>=(const Fraction& other) const {
-           return !(*this < other);
-       }
-
+    bool operator !=(const Fraction &other) const {
+        return !( *this == other);
+    }
+    
+    bool operator < (const Fraction &other) const {
+        return (numerator_ < other.numerator_ && denominator_ < other.denominator_);
+    }
+    
+    bool operator > (const Fraction &other) const {
+        return !(numerator_ < other.numerator_ && denominator_ < other.denominator_);
+    }
+    
     
 };
-
-
 
 int main()
 {

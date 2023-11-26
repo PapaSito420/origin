@@ -148,11 +148,11 @@ public:
         : Triangle(sideA, sideB, static_cast<int>(sqrt(sideA * sideA + sideB * sideB)), 90, asin(sideA / sqrt(sideA * sideA + sideB * sideB)) * 180 / M_PI, 90) {}
   
     bool Type() const override
-    {
-        if(C == 90){
-            return true;
-        } else {return false;};
-    }
+    { if((A+B+C)==180&& ((a + b > c) && (a + b > c) && (b + c > a))){
+        return (C == 90);
+    } else {return false;}
+        }
+    
     string getName() const override {
         return "r_Triangle";
     }
@@ -168,7 +168,9 @@ public:
     
     bool Type() const override
     {
-        return (A == C && a == c);
+        if((A+B+C)==180&& ((a + b > c) && (a + b > c) && (b + c > a))){
+            return (A == C && a == c);
+        } else{return false;}
         
     }
     string getName() const override {
@@ -239,8 +241,9 @@ public:
       Rectangle( int sidea, int sideb,int sidec, int sided):Quad (sidea,sideb,sidec,sided,90,90,90,90){}
     
       bool Type() const override
-      {
+      { if((A+B+C)==180&& ((a + b > c) && (a + b > c) && (b + c > a))){
           return((a == c && b == d)&& (A == 90 && B == 90 && C == 90 && D == 90));
+      } else {return false;}
       }
       
       string getName() const override {
@@ -287,7 +290,10 @@ public:
       
       bool Type() const override
       {
-          return((a == c&&b==c && c == d)&&(A==C&&B==D));
+          if((A+B+C)==180&& ((a + b > c) && (a + b > c) && (b + c > a))){
+              return((a == c&&b==c && c == d)&&(A==C&&B==D));
+          } else { return false;}
+              
       }
       
       string getName() const override {

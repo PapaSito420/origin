@@ -1,0 +1,3 @@
+/Users/andreymenshikov/Desktop/Netology HomeWork/My_first_CMake_project/My_first_CMake_project/CMakeFiles/my_first_cmake_program.dir
+/Users/andreymenshikov/Desktop/Netology HomeWork/My_first_CMake_project/My_first_CMake_project/CMakeFiles/edit_cache.dir
+/Users/andreymenshikov/Desktop/Netology HomeWork/My_first_CMake_project/My_first_CMake_project/CMakeFiles/rebuild_cache.dir
