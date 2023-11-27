@@ -148,7 +148,7 @@ public:
         : Triangle(sideA, sideB, static_cast<int>(sqrt(sideA * sideA + sideB * sideB)), 90, asin(sideA / sqrt(sideA * sideA + sideB * sideB)) * 180 / M_PI, 90) {}
   
     bool Type() const override
-    { if((A+B+C)==180&& ((a + b > c) && (a + b > c) && (b + c > a))){
+    { if(Triangle::Type()){
         return (C == 90);
     } else {return false;}
         }
@@ -168,7 +168,7 @@ public:
     
     bool Type() const override
     {
-        if((A+B+C)==180&& ((a + b > c) && (a + b > c) && (b + c > a))){
+        if(Triangle::Type()){
             return (A == C && a == c);
         } else{return false;}
         
@@ -185,6 +185,14 @@ class e_Triangle : public Triangle {
 public:
     e_Triangle(int side)
         : Triangle( side, side, side, 60, 60, 60) {}
+    bool Type() const override
+    {
+        if(Triangle::Type()){
+            return (A == B && B == C && a == b && a == c);
+        } else{return false;}
+        
+    }
+    
     string getName() const override {
             return "i_Triangle";
         }
@@ -241,7 +249,7 @@ public:
       Rectangle( int sidea, int sideb,int sidec, int sided):Quad (sidea,sideb,sidec,sided,90,90,90,90){}
     
       bool Type() const override
-      { if((A+B+C)==180&& ((a + b > c) && (a + b > c) && (b + c > a))){
+      { if(Quad :: Type()){
           return((a == c && b == d)&& (A == 90 && B == 90 && C == 90 && D == 90));
       } else {return false;}
       }
@@ -258,12 +266,14 @@ public:
       
       bool Type() const override
       {
-          return((A == 90 && B == 90 && C == 90 && D == 90) || (A == B && B == C && C == D));
-          
-          }
+          if(Quad :: Type()){
+              return((A == 90 && B == 90 && C == 90 && D == 90) || (A == B && B == C && C == D));
+          } else {return false;}
+      }
       string getName() const override {
           return "Square";
       }
+          
       };
 
 
@@ -274,7 +284,9 @@ public:
       
       bool Type() const override
       {
-          return ((a == c && b == d)&&(A==C&&B==D));
+          if(Quad :: Type()){
+              return ((a == c && b == d)&&(A==C&&B==D));
+          } else {return false;}
       }
       
       string getName() const override {
@@ -283,6 +295,8 @@ public:
           
       };
 
+
+
   class Rhombus : public Quad {
   public:
           Rhombus (int side, int angle)
@@ -290,7 +304,7 @@ public:
       
       bool Type() const override
       {
-          if((A+B+C)==180&& ((a + b > c) && (a + b > c) && (b + c > a))){
+          if(Quad :: Type()){
               return((a == c&&b==c && c == d)&&(A==C&&B==D));
           } else { return false;}
               
