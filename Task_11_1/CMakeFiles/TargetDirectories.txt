@@ -1,0 +1,4 @@
+/Users/andreymenshikov/Desktop/Netology HW/Task_11_1/CMakeFiles/GreetLib.dir
+/Users/andreymenshikov/Desktop/Netology HW/Task_11_1/CMakeFiles/GreetingApp.dir
+/Users/andreymenshikov/Desktop/Netology HW/Task_11_1/CMakeFiles/edit_cache.dir
+/Users/andreymenshikov/Desktop/Netology HW/Task_11_1/CMakeFiles/rebuild_cache.dir
