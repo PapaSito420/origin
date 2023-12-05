@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libGreetLib.a CMakeFiles/GreetLib.dir/src/Greeter.cpp.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib libGreetLib.a
