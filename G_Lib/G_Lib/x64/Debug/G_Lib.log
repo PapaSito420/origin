@@ -1,0 +1,9 @@
+﻿  dllmain.cpp
+  Greedy.cpp
+F:\Programs\Git\origin\G_Lib\G_Lib\Greedy.cpp(3,20): warning C4273: Greed::back: несовместимое связывание dll
+  F:\Programs\Git\origin\G_Lib\G_Lib\Greed.h(12,14):
+  см. предыдущее определение "back"
+  
+  Создание кода...
+     Создается библиотека F:\Programs\Git\origin\G_Lib\x64\Debug\G_Lib.lib и объект F:\Programs\Git\origin\G_Lib\x64\Debug\G_Lib.exp
+  G_Lib.vcxproj -> F:\Programs\Git\origin\G_Lib\x64\Debug\G_Lib.dll
