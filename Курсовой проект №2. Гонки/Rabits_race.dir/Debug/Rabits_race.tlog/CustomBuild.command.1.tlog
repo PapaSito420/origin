@@ -1,0 +1,10 @@
+^F:\PROGRAMS\GIT\ORIGIN\КУРСОВОЙ ПРОЕКТ №2. ГОНКИ\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SF:/Programs/Git/origin/Курсовой проект №2. Гонки" "-BF:/Programs/Git/origin/Курсовой проект №2. Гонки" --check-stamp-file "F:/Programs/Git/origin/Курсовой проект №2. Гонки/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

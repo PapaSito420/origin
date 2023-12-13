@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\libs\AirRace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\libs\LandRace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\libs\MixRace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\libs\Race.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\libs\AirRace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\libs\LandRace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\libs\MixRace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\libs\CmakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{62964350-9EC4-39D3-95CE-20ABBDF27131}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{467E887A-CAE2-3482-BFE1-03CA7097401F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

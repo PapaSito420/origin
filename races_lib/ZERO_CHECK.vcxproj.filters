@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\Курсовой проект №2. Гонки\libs\races_lib\CMakeFiles\ae43b47bcd62dc8611fcc9ec328f7d47\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{CDC018DB-0A58-3934-B0CF-BFD63612A656}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

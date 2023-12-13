@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\libs\Landvihicle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\libs\Boots.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\libs\Camel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\libs\fastCamel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\libs\Centaur.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\libs\Airvihicle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\libs\Broom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\libs\Eagle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\libs\vihicle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\libs\Landvihicle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\libs\Boots.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\libs\Camel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\libs\fastCamel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\libs\Centaur.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\libs\Airvihicle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\libs\Broom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\libs\Flycarpet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\libs\Eagle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\libs\CmakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{62964350-9EC4-39D3-95CE-20ABBDF27131}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{467E887A-CAE2-3482-BFE1-03CA7097401F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

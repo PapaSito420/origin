@@ -1,0 +1,6 @@
+﻿  Eagle.cpp
+fastCamel.obj : error LNK2005: "public: virtual double __cdecl fastCamel::calculating(double,double)const " (?calculating@fastCamel@@UEBANNN@Z) уже определен в Boots.obj
+Centaur.obj : error LNK2005: "public: virtual double __cdecl fastCamel::calculating(double,double)const " (?calculating@fastCamel@@UEBANNN@Z) уже определен в Boots.obj
+Airvihicle.obj : error LNK2005: "enum VihicleType __cdecl getTape(void)" (?getTape@@YA?AW4VihicleType@@XZ) уже определен в Landvihicle.obj
+     Создается библиотека F:/Programs/Git/origin/Курсовой проект №2. Гонки/libs/Debug/vihicles_lib.lib и объект F:/Programs/Git/origin/Курсовой проект №2. Гонки/libs/Debug/vihicles_lib.exp
+F:\Programs\Git\origin\Курсовой проект №2. Гонки\libs\Debug\vihicles_lib.dll : fatal error LNK1169: обнаружен многократно определенный символ - один или более

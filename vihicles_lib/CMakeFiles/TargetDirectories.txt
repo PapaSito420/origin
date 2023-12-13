@@ -1,0 +1,3 @@
+F:/Programs/Git/origin/Курсовой проект №2. Гонки/Курсовой проект №2. Гонки/libs/vihicles_lib/CMakeFiles/vihicles_lib.dir
+F:/Programs/Git/origin/Курсовой проект №2. Гонки/Курсовой проект №2. Гонки/libs/vihicles_lib/CMakeFiles/ALL_BUILD.dir
+F:/Programs/Git/origin/Курсовой проект №2. Гонки/Курсовой проект №2. Гонки/libs/vihicles_lib/CMakeFiles/ZERO_CHECK.dir

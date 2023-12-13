@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\Курсовой проект №2. Гонки\libs\vihicles_lib\vihicle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\Курсовой проект №2. Гонки\libs\vihicles_lib\Landvihicle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\Курсовой проект №2. Гонки\libs\vihicles_lib\Boots.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\Курсовой проект №2. Гонки\libs\vihicles_lib\Camel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\Курсовой проект №2. Гонки\libs\vihicles_lib\fastCamel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\Курсовой проект №2. Гонки\libs\vihicles_lib\Centaur.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\Курсовой проект №2. Гонки\libs\vihicles_lib\Airvihicle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\Курсовой проект №2. Гонки\libs\vihicles_lib\Broom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\Курсовой проект №2. Гонки\libs\vihicles_lib\Eagle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\Курсовой проект №2. Гонки\libs\vihicles_lib\vihicle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\Курсовой проект №2. Гонки\libs\vihicles_lib\Landvihicle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\Курсовой проект №2. Гонки\libs\vihicles_lib\Boots.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\Курсовой проект №2. Гонки\libs\vihicles_lib\Camel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\Курсовой проект №2. Гонки\libs\vihicles_lib\fastCamel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\Курсовой проект №2. Гонки\libs\vihicles_lib\Centaur.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\Курсовой проект №2. Гонки\libs\vihicles_lib\Airvihicle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\Курсовой проект №2. Гонки\libs\vihicles_lib\Broom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\Курсовой проект №2. Гонки\libs\vihicles_lib\Flycarpet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\Курсовой проект №2. Гонки\libs\vihicles_lib\Eagle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\Programs\Git\origin\Курсовой проект №2. Гонки\Курсовой проект №2. Гонки\libs\vihicles_lib\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4420A769-6E80-339F-8E9E-F70AFCD82878}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{903C3E3C-6588-35F7-AC59-A21B930C07A0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

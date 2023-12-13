@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.8) 
+project(races_lib)
+
+add_library(races_lib SHARED Race.h 
+                                AirRace.cpp AirRace.h 
+										
+							    LandRace.cpp LandRace.h 
+								
+								MixRace.cpp MixRace.h
+			)

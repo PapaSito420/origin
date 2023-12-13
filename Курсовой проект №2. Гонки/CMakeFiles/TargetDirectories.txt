@@ -1,0 +1,6 @@
+F:/Programs/Git/origin/Курсовой проект №2. Гонки/CMakeFiles/Rabits_race.dir
+F:/Programs/Git/origin/Курсовой проект №2. Гонки/CMakeFiles/ALL_BUILD.dir
+F:/Programs/Git/origin/Курсовой проект №2. Гонки/CMakeFiles/ZERO_CHECK.dir
+F:/Programs/Git/origin/Курсовой проект №2. Гонки/libs/CMakeFiles/races_lib.dir
+F:/Programs/Git/origin/Курсовой проект №2. Гонки/libs/CMakeFiles/vihicles_lib.dir
+F:/Programs/Git/origin/Курсовой проект №2. Гонки/libs/CMakeFiles/ALL_BUILD.dir

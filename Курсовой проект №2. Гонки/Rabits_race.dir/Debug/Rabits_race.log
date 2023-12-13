@@ -1,0 +1,7 @@
+﻿  main.cpp
+F:\Programs\Git\origin\Курсовой проект №2. Гонки\main.cpp(12,14): warning C4101: Land: неиспользованная локальная переменная
+F:\Programs\Git\origin\Курсовой проект №2. Гонки\main.cpp(11,14): warning C4101: Air: неиспользованная локальная переменная
+F:\Programs\Git\origin\Курсовой проект №2. Гонки\main.cpp(9,9): warning C4101: distance: неиспользованная локальная переменная
+F:\Programs\Git\origin\Курсовой проект №2. Гонки\main.cpp(13,14): warning C4101: Mix: неиспользованная локальная переменная
+F:\Programs\Git\origin\Курсовой проект №2. Гонки\main.cpp(10,6): warning C4101: pCMD: неиспользованная локальная переменная
+  Rabits_race.vcxproj -> F:\Programs\Git\origin\Курсовой проект №2. Гонки\Debug\Rabits_race.exe
