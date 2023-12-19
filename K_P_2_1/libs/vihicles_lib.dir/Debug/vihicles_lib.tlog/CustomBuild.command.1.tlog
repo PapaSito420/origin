@@ -1,0 +1,10 @@
+^F:\PROGRAMS\GIT\ORIGIN\K_P_2_1\LIBS\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/Programs/Git/origin/K_P_2_1 -BF:/Programs/Git/origin/K_P_2_1 --check-stamp-file F:/Programs/Git/origin/K_P_2_1/libs/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,3 @@
+F:/Programs/Git/origin/K_P_2_1/libs/races_lib.dir/MinSizeRel/AirRace.obj
+F:/Programs/Git/origin/K_P_2_1/libs/races_lib.dir/MinSizeRel/LandRace.obj
+F:/Programs/Git/origin/K_P_2_1/libs/races_lib.dir/MinSizeRel/MixRace.obj

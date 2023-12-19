@@ -1,0 +1,18 @@
+cmake_minimum_required(VERSION 3.8) 
+project(races_lib)
+set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
+add_library(races_lib SHARED Race.h 
+                                AirRace.cpp AirRace.h 
+										
+							    LandRace.cpp LandRace.h 
+								
+								MixRace.cpp MixRace.h
+			)
+
+add_library(vihicles_lib SHARED vihicle.h 
+                                    Landvihicle.cpp Landvihicle.h 
+									    Boots.h Boots.cpp Camel.cpp Camel.h fastCamel.cpp fastCamel.h Centaur.cpp Centaur.h
+										
+							        Airvihicle.cpp Airvihicle.h 
+										Broom.h Broom.cpp Flycarpet.h Flycarpet.h Eagle.h Eagle.cpp 
+			)

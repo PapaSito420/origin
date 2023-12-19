@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\Programs\Git\origin\K_P_2_1\libs\Landvihicle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Programs\Git\origin\K_P_2_1\libs\Boots.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Programs\Git\origin\K_P_2_1\libs\Camel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Programs\Git\origin\K_P_2_1\libs\fastCamel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Programs\Git\origin\K_P_2_1\libs\Centaur.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Programs\Git\origin\K_P_2_1\libs\Airvihicle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Programs\Git\origin\K_P_2_1\libs\Broom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Programs\Git\origin\K_P_2_1\libs\Eagle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="F:\Programs\Git\origin\K_P_2_1\libs\vihicle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Programs\Git\origin\K_P_2_1\libs\Landvihicle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Programs\Git\origin\K_P_2_1\libs\Boots.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Programs\Git\origin\K_P_2_1\libs\Camel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Programs\Git\origin\K_P_2_1\libs\fastCamel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Programs\Git\origin\K_P_2_1\libs\Centaur.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Programs\Git\origin\K_P_2_1\libs\Airvihicle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Programs\Git\origin\K_P_2_1\libs\Broom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Programs\Git\origin\K_P_2_1\libs\Flycarpet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Programs\Git\origin\K_P_2_1\libs\Eagle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\Programs\Git\origin\K_P_2_1\libs\CmakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93C33154-329E-3971-8B0F-601E836D1137}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{EF6CCD8C-6EB1-365A-BD75-85EBACB2509F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

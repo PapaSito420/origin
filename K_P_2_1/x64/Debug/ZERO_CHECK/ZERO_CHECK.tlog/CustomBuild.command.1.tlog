@@ -1,0 +1,10 @@
+^F:\PROGRAMS\GIT\ORIGIN\K_P_2_1\CMAKEFILES\10F797C47E8F9540FFD9A1EDB22BD038\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/Programs/Git/origin/K_P_2_1 -BF:/Programs/Git/origin/K_P_2_1 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file F:/Programs/Git/origin/K_P_2_1/Rabbits_race.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,8 @@
+F:/Programs/Git/origin/K_P_2_1/libs/vihicles_lib.dir/MinSizeRel/Landvihicle.obj
+F:/Programs/Git/origin/K_P_2_1/libs/vihicles_lib.dir/MinSizeRel/Boots.obj
+F:/Programs/Git/origin/K_P_2_1/libs/vihicles_lib.dir/MinSizeRel/Camel.obj
+F:/Programs/Git/origin/K_P_2_1/libs/vihicles_lib.dir/MinSizeRel/fastCamel.obj
+F:/Programs/Git/origin/K_P_2_1/libs/vihicles_lib.dir/MinSizeRel/Centaur.obj
+F:/Programs/Git/origin/K_P_2_1/libs/vihicles_lib.dir/MinSizeRel/Airvihicle.obj
+F:/Programs/Git/origin/K_P_2_1/libs/vihicles_lib.dir/MinSizeRel/Broom.obj
+F:/Programs/Git/origin/K_P_2_1/libs/vihicles_lib.dir/MinSizeRel/Eagle.obj
