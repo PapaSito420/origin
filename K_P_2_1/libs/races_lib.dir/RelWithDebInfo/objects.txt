@@ -1,3 +1,0 @@
-F:/Programs/Git/origin/K_P_2_1/libs/races_lib.dir/RelWithDebInfo/AirRace.obj
-F:/Programs/Git/origin/K_P_2_1/libs/races_lib.dir/RelWithDebInfo/LandRace.obj
-F:/Programs/Git/origin/K_P_2_1/libs/races_lib.dir/RelWithDebInfo/MixRace.obj

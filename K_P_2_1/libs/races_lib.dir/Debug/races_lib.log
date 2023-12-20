@@ -1,8 +1,0 @@
-﻿  Building Custom Rule F:/Programs/Git/origin/K_P_2_1/libs/CMakeLists.txt
-  AirRace.cpp
-  LandRace.cpp
-  MixRace.cpp
-  Создание кода...
-  Auto build dll exports
-     Создается библиотека F:/Programs/Git/origin/K_P_2_1/libs/Debug/races_lib.lib и объект F:/Programs/Git/origin/K_P_2_1/libs/Debug/races_lib.exp
-  races_lib.vcxproj -> F:\Programs\Git\origin\K_P_2_1\libs\Debug\races_lib.dll
