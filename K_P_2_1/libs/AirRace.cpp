@@ -1,7 +1,11 @@
 #include "AirRace.h"
 #include "Airvihicle.h"
 
+
+
+
 void AirRace::recerRegistr(Vihicle* vihicle) {
+
 
 	if (vihicle->getType() == VihicleType::Air && racerCount < racerCapacity) {
 		racer[racerCount++] = vihicle;
@@ -10,7 +14,3 @@ void AirRace::recerRegistr(Vihicle* vihicle) {
     }
 }
 
-void AirRace::start() const {
-	std::cout << "Starting Air Race with " << racerCount << " racers!" << std::endl;
-}
-		

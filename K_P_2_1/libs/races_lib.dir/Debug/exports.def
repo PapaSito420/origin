@@ -5,8 +5,6 @@ EXPORTS
 	??0sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z
 	??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ
 	??1sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ
-	??5@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@std@@AEAV01@AEAW4VihicleType@@@Z
-	??9@YA_NW4VihicleType@@0@Z
 	??Bsentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEBA_NXZ
 	?__empty_global_delete@@YAXPEAX@Z
 	?__empty_global_delete@@YAXPEAX_K@Z
@@ -16,4 +14,3 @@ EXPORTS
 	?recerRegistr@AirRace@@UEAAXPEAVVihicle@@@Z
 	?recerRegistr@LandRace@@UEAAXPEAVVihicle@@@Z
 	?recerRegistr@MixRace@@UEAAXPEAVVihicle@@@Z
-	?start@AirRace@@UEBAXXZ

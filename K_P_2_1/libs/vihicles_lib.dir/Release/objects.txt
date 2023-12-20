@@ -5,4 +5,5 @@ F:/Programs/Git/origin/K_P_2_1/libs/vihicles_lib.dir/Release/fastCamel.obj
 F:/Programs/Git/origin/K_P_2_1/libs/vihicles_lib.dir/Release/Centaur.obj
 F:/Programs/Git/origin/K_P_2_1/libs/vihicles_lib.dir/Release/Airvihicle.obj
 F:/Programs/Git/origin/K_P_2_1/libs/vihicles_lib.dir/Release/Broom.obj
+F:/Programs/Git/origin/K_P_2_1/libs/vihicles_lib.dir/Release/Flycarpet.obj
 F:/Programs/Git/origin/K_P_2_1/libs/vihicles_lib.dir/Release/Eagle.obj

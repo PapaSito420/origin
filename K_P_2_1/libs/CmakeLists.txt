@@ -14,5 +14,5 @@ add_library(vihicles_lib SHARED vihicle.h
 									    Boots.h Boots.cpp Camel.cpp Camel.h fastCamel.cpp fastCamel.h Centaur.cpp Centaur.h
 										
 							        Airvihicle.cpp Airvihicle.h 
-										Broom.h Broom.cpp Flycarpet.h Flycarpet.h Eagle.h Eagle.cpp 
+										Broom.h Broom.cpp Flycarpet.h Flycarpet.cpp Eagle.h Eagle.cpp 
 			)

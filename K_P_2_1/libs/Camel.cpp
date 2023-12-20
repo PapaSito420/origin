@@ -31,3 +31,4 @@ void Camel::getResults(double distance) const {
     double time = this->calculating(distance);
     std::cout<< "Camel. TIME: " << time<< std::endl;
 }
+

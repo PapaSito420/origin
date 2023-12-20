@@ -18,7 +18,8 @@ public:
 	}
 
 	virtual void recerRegistr (Vihicle* vihicle) =0;
-	virtual void start() const =0 ;
+
+	
 	virtual ~Race() {
 		for (int i = 0; i < racerCount; ++i) {
 			delete racer[i]; 

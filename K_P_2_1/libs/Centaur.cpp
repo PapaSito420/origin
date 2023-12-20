@@ -27,3 +27,4 @@ void Centaur::getResults(double distance) const {
     double time = this->calculating(distance);
     std::cout<< "Centaur. TIME: " << time<< std::endl;
 }
+

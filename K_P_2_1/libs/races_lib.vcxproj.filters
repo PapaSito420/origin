@@ -26,7 +26,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="F:\Programs\Git\origin\K_P_2_1\libs\CmakeLists.txt" />
+    <CustomBuild Include="F:\Programs\Git\origin\K_P_2_1\libs\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">

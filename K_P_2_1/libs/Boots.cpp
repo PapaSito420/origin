@@ -31,4 +31,4 @@ void Boots::getResults(double distance) const {
     std::cout<< "Magic Boots. TIME: " << time<< std::endl;
 }
 
-std::string Boots::getName()const {return name;}
+

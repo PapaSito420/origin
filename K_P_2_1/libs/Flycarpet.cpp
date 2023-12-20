@@ -2,8 +2,8 @@
 #include <string>
 
 double Flycarpet::calculating(double distance) const{
-	double actualDistance; 
-	double distanceReduction;
+	
+	double distanceReduction = 0;
 	
 	if ( distance < 1000 ) {
           distanceReduction = 0; 

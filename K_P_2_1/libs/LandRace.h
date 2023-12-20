@@ -4,5 +4,6 @@ class LandRace: public Race{
 	public:
 	using Race::Race;
 	
-	virtual void recerRegistr (Vihicle* vihicle) override;
+	 void recerRegistr (Vihicle* vihicle) override;
+
 };

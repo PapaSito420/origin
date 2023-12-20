@@ -22,6 +22,9 @@
     <ClCompile Include="F:\Programs\Git\origin\K_P_2_1\libs\Broom.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="F:\Programs\Git\origin\K_P_2_1\libs\Flycarpet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="F:\Programs\Git\origin\K_P_2_1\libs\Eagle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -59,7 +62,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="F:\Programs\Git\origin\K_P_2_1\libs\CmakeLists.txt" />
+    <CustomBuild Include="F:\Programs\Git\origin\K_P_2_1\libs\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">

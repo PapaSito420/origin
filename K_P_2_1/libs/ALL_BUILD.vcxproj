@@ -108,7 +108,7 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="F:\Programs\Git\origin\K_P_2_1\libs\CmakeLists.txt">
+    <CustomBuild Include="F:\Programs\Git\origin\K_P_2_1\libs\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule F:/Programs/Git/origin/K_P_2_1/libs/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal

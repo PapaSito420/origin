@@ -1,9 +1,8 @@
-﻿  LandRace.cpp
-F:\Programs\Git\origin\K_P_2_1\libs\vihicle.h(23): warning C4717: operator!=: рекурсия на всех путях выполнения, функция вызовет переполнение стека
+﻿  Building Custom Rule F:/Programs/Git/origin/K_P_2_1/libs/CMakeLists.txt
+  AirRace.cpp
+  LandRace.cpp
+  MixRace.cpp
+  Создание кода...
   Auto build dll exports
-LandRace.obj : error LNK2005: "class std::basic_istream<char,struct std::char_traits<char> > & __cdecl operator>>(class std::basic_istream<char,struct std::char_traits<char> > &,enum VihicleType &)" (??5@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@std@@AEAV01@AEAW4VihicleType@@@Z) уже определен в AirRace.obj
-LandRace.obj : error LNK2005: "bool __cdecl operator!=(enum VihicleType,enum VihicleType)" (??9@YA_NW4VihicleType@@0@Z) уже определен в AirRace.obj
-MixRace.obj : error LNK2005: "class std::basic_istream<char,struct std::char_traits<char> > & __cdecl operator>>(class std::basic_istream<char,struct std::char_traits<char> > &,enum VihicleType &)" (??5@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@std@@AEAV01@AEAW4VihicleType@@@Z) уже определен в AirRace.obj
-MixRace.obj : error LNK2005: "bool __cdecl operator!=(enum VihicleType,enum VihicleType)" (??9@YA_NW4VihicleType@@0@Z) уже определен в AirRace.obj
      Создается библиотека F:/Programs/Git/origin/K_P_2_1/libs/Debug/races_lib.lib и объект F:/Programs/Git/origin/K_P_2_1/libs/Debug/races_lib.exp
-F:\Programs\Git\origin\K_P_2_1\libs\Debug\races_lib.dll : fatal error LNK1169: обнаружен многократно определенный символ - один или более
+  races_lib.vcxproj -> F:\Programs\Git\origin\K_P_2_1\libs\Debug\races_lib.dll

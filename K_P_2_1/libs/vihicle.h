@@ -10,7 +10,7 @@ enum class  VihicleType {
 };
 
 
-std::istream& operator>>(std::istream& in, VihicleType& type ){
+inline std::istream& operator>>(std::istream& in, VihicleType& type ){
 	int input; 
 	in >> input;
 	type = static_cast<VihicleType>(input);
@@ -18,8 +18,8 @@ std::istream& operator>>(std::istream& in, VihicleType& type ){
     }
 
 
-bool operator !=(const VihicleType left, const VihicleType right) {
-		return left!=right;
+inline  bool operator !=(const VihicleType left, const VihicleType right) {
+	return static_cast<int>(left) != static_cast<int>(right);
 	};
 
 

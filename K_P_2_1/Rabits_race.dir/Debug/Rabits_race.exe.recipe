@@ -5,6 +5,12 @@
       <FullPath>F:\Programs\Git\origin\K_P_2_1\x64\Debug\ZERO_CHECK</FullPath>
     </ProjectOutput>
     <ProjectOutput>
+      <FullPath>F:\Programs\Git\origin\K_P_2_1\libs\Debug\races_lib.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>F:\Programs\Git\origin\K_P_2_1\libs\Debug\vihicles_lib.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
       <FullPath>F:\Programs\Git\origin\K_P_2_1\Debug\Rabits_race.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>

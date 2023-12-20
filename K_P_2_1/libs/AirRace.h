@@ -5,5 +5,4 @@ public:
 	using Race::Race;
 	
 	 void recerRegistr(Vihicle* vihicle)  override;
-	 void start() const override;
 };

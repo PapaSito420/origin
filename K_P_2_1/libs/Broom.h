@@ -1,11 +1,11 @@
 #include "Airvihicle.h" 
-
+#include <string>
 
 class Broom: public AirVehicle {
 	
 	public:
-	Broom::Broom() :
-		AirVehicle(spd, nm, distanceReduction) {}
+	Broom() :
+		AirVehicle(20.00,"Broom", 0.06) {}
 
 	
 	virtual std::string getName() const override {return name;}
@@ -13,10 +13,6 @@ class Broom: public AirVehicle {
     virtual void getResults(double distance) const override;
 
 
-private:
-	double distanceReduction = 0.06;
-	double spd = 20.00;
-	std::string nm = "Broom";
 
 };
 

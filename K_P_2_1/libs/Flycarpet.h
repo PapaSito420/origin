@@ -8,6 +8,6 @@ class Flycarpet: public AirVehicle {
     
 	virtual double calculating(double distance) const override ;
 	virtual void getResults(double distance) const override;
-	virtual std::string getName() const override {return name;}
+	std::string getName() const override {return name;}
 };
 
