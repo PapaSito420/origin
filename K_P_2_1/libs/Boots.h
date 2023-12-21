@@ -10,6 +10,6 @@ public:
     virtual double calculating(double distance) const override;
     virtual void getResults(double distance) const override;
     virtual std::string getName() const override { return "Magic boots"; }
-    ;
+    
 
 };

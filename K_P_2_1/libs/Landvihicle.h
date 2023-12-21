@@ -1,11 +1,11 @@
 #pragma once
 #include "Vihicle.h"
 #include <string>
+#include <iostream>
 
 class LandVehicle : public Vihicle {
 protected:
-    double speed;
-    std::string name;
+   
 	
     double firstRestDuration;
 	  double secondRestDuration;
@@ -18,6 +18,6 @@ public:
 
       
     virtual double calculating(double distance) const = 0;
-    virtual VihicleType getType () const override;
+    VihicleType getType() const override { return VihicleType::Land; }
     virtual void getResults(double distance) const = 0;
 };
